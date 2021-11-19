@@ -28,16 +28,27 @@ def getPosts(pos, loc, province, page):
         'description': item.find('div', class_ = 'job-snippet').text,
         #getting the post date
         'postDate': item.find('span', 'date').text,
+        #the name of position
+        'position': pos,
         }
         postings.append(info)
     return
 
-for i in range(1, 11):
+for i in range(1, 4):
     getPosts('developer', 'Toronto', 'ON', i)
+    getPosts('manager', 'Toronto', 'ON', i)
     time.sleep(5)
-    #getPosts('engineer', 'Toronto', 'ON', i)
 
 print(len(postings))
+try:
+    old_df=pd.read_csv('jobs.csv')
+    new_df=pd.DataFrame(postings)
+    final_df=old_df.append(new_df)
+except pd.errors.EmptyDataError as err:
+    final_df=pd.DataFrame(postings)
+
+final_df.to_csv('jobs.csv')
+
 '''
 jobs = pd.DataFrame(postings)
 jobs.to_csv('jobs.csv')
