@@ -13,7 +13,10 @@ postings = []
 def get_description(jobLink):
     response = requests.get(jobLink)
     soup = BeautifulSoup(response.content, "html.parser")
-    return soup.find('div', 'jobsearch-jobDescriptionText').text
+    description=soup.find('div', 'jobsearch-jobDescriptionText')
+    if description is None:
+        return ''
+    return description.text
 
 
 def getPosts(pos, loc, province, page):
@@ -44,7 +47,7 @@ def getPosts(pos, loc, province, page):
 
         postings.append(info)
 
-for i in range(1, 3):
+for i in range(11, 51):
     getPosts('developer', 'Toronto', 'ON', i)
     time.sleep(5)
     getPosts('manager', 'Toronto', 'ON', i)
