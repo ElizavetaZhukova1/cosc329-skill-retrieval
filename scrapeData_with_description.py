@@ -47,9 +47,9 @@ def getPosts(pos, loc, province, page):
         if info['description']: #If there's something in the description, add the job to the dataset
             postings.append(info)
 
-for i in range(6, 11):
+for i in range(135, 151):
     getPosts('developer', 'Toronto', 'ON', i)
-    time.sleep(1)
+    time.sleep(5)
     getPosts('manager', 'Toronto', 'ON', i)
     time.sleep(1)
 
