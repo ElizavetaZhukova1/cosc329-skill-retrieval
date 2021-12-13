@@ -1,5 +1,11 @@
 # cosc329-skill-retrieval
-## The project is created by Elizaveta Zhukova and Sophia Joseph. The descriptions for files:
+## The project is created by Elizaveta Zhukova and Sophia Joseph. 
+
+## The link to the report: https://docs.google.com/document/d/1qULa5P5VO_jSzUdbtJi_ekeJ9mPlObtm3lt1KbPunQk/edit?usp=sharing
+
+## The link to the video:
+
+## The descriptions for files:
 `final_skill_extraction.ipynb` - contains the final version of the skills extraction. Because the original dataset was too big we had to extract the skills by taking only slices of the dataset each time and then merging them. So, if you are willing to try and run the program on the full dataset, remove the slicing from the code in the beginnig and change the name of the  csv file there the dataset gets exported in the end.
 
 `final_test_cases.ipynb`- contains mostly the same content as the previous file, but with test cases and prepared for the demo video.
