@@ -26,6 +26,8 @@
 
 `scrapeData_with_description.py` - our custom scrapper for Indeed.ca
 
+`Link to our demo video:` https://drive.google.com/drive/folders/1ZolZJCGhjgRPKTdVlDidTg4HOc-cSUAQ?usp=sharing
+
 **Note: Please, use the main branch for exploring the project. Other branches may contain code without proper acknowledgments and the datasets you might consider confusing. So, please, visit at your own risk (or better don't visit at all)**
 
 
