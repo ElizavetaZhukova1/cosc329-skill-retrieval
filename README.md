@@ -3,7 +3,7 @@
 
 ## The link to the report: https://docs.google.com/document/d/1qULa5P5VO_jSzUdbtJi_ekeJ9mPlObtm3lt1KbPunQk/edit?usp=sharing
 
-## The link to the video:
+## The link to the video: https://drive.google.com/drive/folders/1ZolZJCGhjgRPKTdVlDidTg4HOc-cSUAQ?usp=sharing
 
 ## The descriptions for files:
 `final_skill_extraction.ipynb` - contains the final version of the skills extraction. Because the original dataset was too big we had to extract the skills by taking only slices of the dataset each time and then merging them. So, if you are willing to try and run the program on the full dataset, remove the slicing from the code in the beginnig and change the name of the  csv file there the dataset gets exported in the end.
@@ -26,7 +26,6 @@
 
 `scrapeData_with_description.py` - our custom scrapper for Indeed.ca
 
-`Link to our demo video:` https://drive.google.com/drive/folders/1ZolZJCGhjgRPKTdVlDidTg4HOc-cSUAQ?usp=sharing
 
 **Note: Please, use the main branch for exploring the project. Other branches may contain code without proper acknowledgments and the datasets you might consider confusing. So, please, visit at your own risk (or better don't visit at all)**
 
